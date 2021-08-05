@@ -14,6 +14,8 @@ namespace DocControl.Domain.Entities
         public string Process { get; private set; }
         public string Category { get; private set; }
         public string File { get; private set; }
+        
+        
 
 
         //This constructor is used just for populating Database with code, without WebApp, tests purpose
@@ -29,6 +31,7 @@ namespace DocControl.Domain.Entities
             ValidateDomain(code, title, process, category, file);
         }
 
+       
         public void Update(int code, string title, string process, string category, string file)
         {
             ValidateDomain(code, title, process, category, file);

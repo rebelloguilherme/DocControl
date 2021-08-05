@@ -14,18 +14,6 @@
         <dd class="col-sm-10">@Html.DisplayFor(model => model.Category)</dd>
         <dt class="col-sm-2">@Html.DisplayNameFor(model => model.File)</dt>
         <dd class="col-sm-10">@Html.DisplayFor(model => model.File)</dd>
-        <dd class="col-sm-10">
-            @if (!ViewBag.ImageExist)
-            {
-                <img src="~/images/noimage.png" class="rounded-circle"
-                     height="300" width="300" asp-append-version="true" />
-            }
-            else
-            {
-                <img src="~/images/@Model.File" class="rounded-circle"
-                     height="300" width="300" asp-append-version="true" />
-            }
-        </dd>
     </dl>
 </div>
 <div>
